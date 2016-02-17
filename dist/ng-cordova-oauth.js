@@ -950,7 +950,8 @@ angular.module("oauth.providers", [
   'oauth.jawbone',
   'oauth.untappd',
   'oauth.dribble',
-  'oauth.pocket'])
+  'oauth.pocket',
+  'oauth.mercadolibre'])
   .factory("$cordovaOauth", cordovaOauth);
 
 function cordovaOauth(
@@ -959,7 +960,7 @@ function cordovaOauth(
   $ngCordovaTwitter, $ngCordovaMeetup, $ngCordovaSalesforce, $ngCordovaStrava, $ngCordovaWithings, $ngCordovaFoursquare, $ngCordovaMagento,
   $ngCordovaVkontakte, $ngCordovaOdnoklassniki, $ngCordovaImgur, $ngCordovaSpotify, $ngCordovaUber, $ngCordovaWindowslive, $ngCordovaYammer,
   $ngCordovaVenmo, $ngCordovaStripe, $ngCordovaRally, $ngCordovaFamilySearch, $ngCordovaEnvato, $ngCordovaWeibo, $ngCordovaJawbone, $ngCordovaUntappd,
-  $ngCordovaDribble, $ngCordovaPocket) {
+  $ngCordovaDribble, $ngCordovaPocket, $ngCordovaMercadolibre) {
 
   return {
     azureAD: $ngCordovaAzureAD.signin,
@@ -998,6 +999,7 @@ function cordovaOauth(
     untappd: $ngCordovaUntappd.signin,
     dribble: $ngCordovaDribble.signin,
     pocket: $ngCordovaPocket.signin,
+    mercadolibre: $ngCordovaMercadolibre.signin,
   };
 }
 
@@ -1038,7 +1040,8 @@ cordovaOauth.$inject = [
   '$ngCordovaJawbone',
   '$ngCordovaUntappd',
   '$ngCordovaDribble',
-  '$ngCordovaPocket'
+  '$ngCordovaPocket',
+  '$ngCordovaMercadolibre'
 ];
 
 angular.module('oauth.linkedin', ['oauth.utils'])

@@ -4,7 +4,7 @@
     "dist/ng-cordova-oauth.js",
     "dist/ng-cordova-oauth.min.js"
   ],
-  "version": "0.2.4",
+  "version": "0.2.5",
   "homepage": "https://github.com/PalumboN/ng-cordova-oauth",
   "authors": [
     "Nic Raboy <http://www.nraboy.com>"
